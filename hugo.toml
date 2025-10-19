@@ -1,0 +1,108 @@
+baseURL = 'https://www.technlunch.blog/'
+relativeURLs = true
+publishDir = 'docs'
+theme = "hugo-theme-techdoc"
+
+title = 'Tech & Lunch'
+author = 'Interesados en publicar posts de tecnología'
+description = 'Blog para compartir noticias, documentación, etc. de tecnología, programación, desarrollo web, software libre, etc.'
+copyright = "Tech & Lunch"
+
+hasCJKLanguage = true
+metaDataFormat = "yaml"
+
+languageCode = 'es-ES'
+defaultContentLanguage = "es"
+defaultContentLanguageInSubdir = false
+enableMissingTranslationPlaceholders = false
+
+removePathAccents = true
+enableEmoji = true
+
+[taxonomies]
+tag = 'tags'
+category = 'categories'
+
+[permalinks]
+  posts = "/:year/:month/:day/:slug"
+
+[security]
+  [security.exec]
+    allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$', '^asciidoctor$']
+
+# Markup configure section
+# See https://gohugo.io/getting-started/configuration-markup/
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark.renderer]
+    unsafe= true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = "--"
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    tabWidth = 2
+
+  [markup.asciidocExt]
+    workingFolderCurrent = true
+    extensions = ['asciidoctor-html5s', 'asciidoctor-diagram']
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  author = 'iCesofT'
+  title = 'Tech & Lunch'
+  description = 'Blog sobre tecnología, programación, desarrollo web, software libre, etc.'
+  introDescription = "Entusiasta de la tecnología y aprendizaje continuo"
+  version = 'v1.0.0'
+  dateFormat = "2006-01-02 15:04"
+
+  twitter = '@fjahijado'
+  largeTwitterCard = false
+
+  ga_analytics_id = "G-31VK0KVD22"
+
+  numberOfTagsShown = 10
+
+  fallBackOgImage = "image/thumbnail.png"
+
+  codeMaxLines = 10
+  codeLineNumbers = true
+
+  customCSS = [ "css/asciidoctor.css", "css/prism.css" ]
+  customJS = [ "js/asciidoctor.js", "js/lib/prism.js" ]
+
+  menu_style = "open-menu" # "open-menu" or "slide-menu" or "" blank is as no sidebar
+  mainSections = [ "posts", "blogs" ]
+
+  centerLogo = false
+  logo = "images/logo.png"
+
+  figurePositionLabel = "Figura"
+
+  enforceLightMode = true
+  mobileNavigation = "left"
+
+  relatedPosts = true
+
+  [params.related]
+    includeNewer = false
+    threshold = 80
+    toLower = false
+    indices = [ "keywords", "tags", "categories"]
+  
+  # path name excluded from documentation menu
+  menu_exclusion = [
+      "archives",
+      "archive",
+      "blog",
+      "entry",
+      "post",
+      "posts",
+  ]
+
+[pagination]
+pagerSize = 10
