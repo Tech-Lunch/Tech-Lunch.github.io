@@ -1,0 +1,18 @@
+---
+author: iCesofT
+title: "Nuevo blog"
+date: 2025-10-19T10:00:00+02:00
+description: "Nuevo blog"
+draft: false
+featured: false
+toc: true
+categories:
+  - AsciiDoc
+tags:
+  - AsciiDoc
+slug: nuevo-blog
+---
+
+¡Bienvenidos a mi nuevo blog! Este es nuestro primer post, donde compartiremos pensamientos, experiencias y conocimientos sobre diversos temas. Estamos emocionados de comenzar este viaje y esperamos que disfrutéis leyendo tanto como nosotros disfrutamos escribiendo.
+
+¡Gracias por acompañarnos en esta aventura!
