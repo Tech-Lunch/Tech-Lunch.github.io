@@ -64,6 +64,7 @@ category = 'categories'
   largeTwitterCard = false
 
   ga_analytics_id = "G-31VK0KVD22"
+  tag_manager_container_id = "G-31VK0KVD22" # Your Google Tag Manager container id
 
   numberOfTagsShown = 10
 
