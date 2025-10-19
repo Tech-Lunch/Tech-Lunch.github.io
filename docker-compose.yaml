@@ -8,7 +8,7 @@ services:
       --minify
       --baseURL "http://localhost:1313"
       --destination /docs
-      --theme hugo-clarity
+      --theme hugo-theme-techdoc
     volumes:
       - .:/hugo-project
       - ./docs:/docs
